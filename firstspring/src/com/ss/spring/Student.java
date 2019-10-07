@@ -1,4 +1,4 @@
-package com.javatpoint;
+package com.ss.spring;
 
 public class Student {
 private String name;
