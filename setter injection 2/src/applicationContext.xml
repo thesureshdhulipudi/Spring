@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans
-	xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:p="http://www.springframework.org/schema/p"
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-<bean id="address1" class="com.javatpoint.Address">
-<property name="addressLine1" value="51,Lohianagar"></property>
-<property name="city" value="Ghaziabad"></property>
-<property name="state" value="UP"></property>
-<property name="country" value="India"></property>
-</bean>
+	<bean id="address1" class="com.ss.spring.Address">
+		<property name="addressLine1" value="7/G,Sr Nagar"></property>
+		<property name="city" value="Hyderabad"></property>
+		<property name="state" value="TS"></property>
+		<property name="country" value="India"></property>
+	</bean>
 
-<bean id="obj" class="com.javatpoint.Employee">
-<property name="id" value="1"></property>
-<property name="name" value="Sachin Yadav"></property>
-<property name="address" ref="address1"></property>
-</bean>
+	<bean id="obj" class="com.ss.spring.Employee">
+		<property name="id" value="10001"></property>
+		<property name="name" value="Suresh Naidu"></property>
+		<property name="address" ref="address1"></property>
+	</bean>
 
 </beans>
