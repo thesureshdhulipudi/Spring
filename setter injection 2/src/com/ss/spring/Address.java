@@ -1,7 +1,8 @@
 package com.ss.spring;
 
 public class Address {
-	private String addressLine1, city, state, country;
+	private String addressLine1;
+	private String  city, state, country;
 
 	public String getAddressLine1() {
 		return addressLine1;

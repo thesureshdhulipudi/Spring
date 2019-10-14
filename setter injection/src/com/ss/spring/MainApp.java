@@ -13,5 +13,6 @@ public class MainApp {
 
 		Employee e = (Employee) factory.getBean("obj");
 		e.display();
+		System.out.println("\n City : "+e.getCity());
 	}
 }
