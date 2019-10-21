@@ -1,0 +1,32 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+		<property name="mappings">
+			<value>
+			/welcome.htm=welcomeController
+			/*/welcome.htm=welcomeController
+			/bye.htm=byeController
+			</value>
+		</property>
+	</bean>
+	
+	<bean id="welcomeController" 
+		class="com.java.springmvc.WelcomeController" />
+		
+	<bean id="byeController" 
+		class="com.java.springmvc.ByeController" />
+	
+	<bean id="viewResolver"
+    	class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
+        <property name="prefix">
+            <value>/WEB-INF/pages/</value>
+        </property>
+        <property name="suffix">
+            <value>.jsp</value>
+        </property>
+    </bean>
+
+</beans>
